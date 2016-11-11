@@ -452,7 +452,8 @@ module Technoweenie # :nodoc:
             name.gsub! /^.*(\\|\/)/, ''
 
             # Finally, replace all non alphanumeric, underscore or periods with underscore
-            name.gsub! /[^A-Za-z0-9\.\-]/, '_'
+            #commenting out the below line to support foreign characters
+            #name.gsub! /[^A-Za-z0-9\.\-]/, '_'
           end
         end
 
